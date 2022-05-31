@@ -16,41 +16,7 @@ import com.google.firebase.messaging.FirebaseMessaging;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = FCMService.TAG;
-    private Button btn_WristbandLock;
-    private Button btn_CurrentLocation;
-    private Button btn_HistoryLocation;
-    private Button btn_HealthConditions;
-    private Button btn_HistoryHealthConditions;
-    private Button btn_AbnormalRecord;
-    private Button btn_showimage;
-
-
-
-
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        FirebaseMessaging.getInstance().subscribeToTopic("news");
-        FirebaseMessaging.getInstance().getToken().addOnCompleteListener(new OnCompleteListener<String>() {
-            @Override
-            public void onComplete(@NonNull Task<String> task) {
-                if (!task.isSuccessful())return;
-                String token = task.getResult();
-                Log.d(TAG, "onComplete: "+token);
-            }
-        });
-
-        btn_WristbandLock = findViewById(R.id.btn_WristbandLock);
-        btn_CurrentLocation = findViewById(R.id.btn_CurrentLocation);
-        btn_HistoryLocation = findViewById(R.id.btn_HistoryLocation);
-        btn_HealthConditions = findViewById(R.id.btn_HealthConditions);
-        btn_HistoryHealthConditions = findViewById(R.id.btn_HistoryHealthConditions);
-        btn_AbnormalRecord = findViewById(R.id.btn_AbnormalRecord);
-        btn_showimage = findViewById(R.id.btn_showimage);
-
-
+    //............Do something
 
         btn_WristbandLock.setOnClickListener(new View.OnClickListener(){
             int flag = 0;
@@ -76,52 +42,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        btn_HistoryLocation.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,HistoryLocation.class);
-                startActivity(intent);
-            }
-        });
-
-        btn_HealthConditions.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,HealthConditions.class);
-                startActivity(intent);
-            }
-        });
-
-        btn_HistoryHealthConditions.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,HistoryHealthConditions.class);
-                startActivity(intent);
-            }
-        });
-
-        btn_AbnormalRecord.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,AbnormalRecord.class);
-                startActivity(intent);
-            }
-        });
-
-        btn_showimage.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,ElectroCardioGraphy.class);
-                startActivity(intent);
-            }
-        });
-
+        
+        //............Do something
 
     }
 
