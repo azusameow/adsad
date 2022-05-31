@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_WristbandLock;
     private Button btn_CurrentLocation;
     //............Do something
+        btn_WristbandLock = findViewById(R.id.btn_WristbandLock);
+        btn_CurrentLocation = findViewById(R.id.btn_CurrentLocation);
     
         btn_WristbandLock.setOnClickListener(new View.OnClickListener(){
             int flag = 0;
