@@ -1,6 +1,7 @@
 
 public class MainActivity extends AppCompatActivity {
-    public static final String TAG = FCMService.TAG;
+    private Button btn_WristbandLock;
+    private Button btn_CurrentLocation;
     //............Do something
 
         btn_WristbandLock.setOnClickListener(new View.OnClickListener(){
