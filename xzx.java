@@ -1,4 +1,3 @@
-
 public class MainActivity extends AppCompatActivity {
     private Button btn_WristbandLock;
     private Button btn_CurrentLocation;
