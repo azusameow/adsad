@@ -3,7 +3,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_WristbandLock;
     private Button btn_CurrentLocation;
     //............Do something
-
+    
         btn_WristbandLock.setOnClickListener(new View.OnClickListener(){
             int flag = 0;
             public void onClick(View v){
@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btn_CurrentLocation.setOnClickListener(new View.OnClickListener(){
-
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,MapsActivity.class);
